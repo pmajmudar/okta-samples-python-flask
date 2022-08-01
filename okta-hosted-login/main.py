@@ -14,7 +14,7 @@ from user import User
 
 
 app = Flask(__name__)
-app.config.update({'SECRET_KEY': 'SomethingNotEntirelySecret'})
+app.config.update({'SECRET_KEY': ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase + string.digits, k=32))})
 
 login_manager = LoginManager()
 login_manager.init_app(app)
