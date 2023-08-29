@@ -4,3 +4,8 @@ flask-cors==3.0.10
 pyOpenSSL==23.2.0
 Flask-Login==0.4.1
 okta-jwt-verifier==0.2.0
+
+# To fix errors PBM
+Jinja2==3.0.1
+itsdangerous==2.0.1
+Werkzeug~=2.0.0
